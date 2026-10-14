@@ -73,6 +73,15 @@ export interface Product {
   details: string[];
 }
 
+/** Decorative editorial photograph used in lookbook / band sections. */
+export interface EditorialImage {
+  src: string;
+  alt: string;
+  /** CSS gradient fallback shown if the remote image fails. */
+  gradient: string;
+  label: string;
+}
+
 export interface UserSelections {
   personalities: Personality[];
   styles: Style[];

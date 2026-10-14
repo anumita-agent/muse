@@ -54,9 +54,9 @@ export default function Navbar({ onNavigate, wishlistCount }: NavbarProps) {
         <button
           onClick={() => go("top")}
           className="font-serif text-2xl font-medium tracking-[0.35em] md:text-3xl"
-          aria-label="MUSE — back to top"
+          aria-label="TANTORA — back to top"
         >
-          MUSE
+          TANTORA
         </button>
 
         <ul className="hidden items-center gap-12 md:flex">

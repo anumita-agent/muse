@@ -1,5 +1,7 @@
 import type { UserSelections } from "@/types";
 import { identityDescription, identityWords } from "@/utils/copy";
+import { LOOKBOOK_IMAGES } from "@/data/editorial";
+import ProductImage from "./ProductImage";
 import Reveal from "./Reveal";
 
 interface Props {
@@ -41,6 +43,30 @@ export default function StyleProfile({ selections }: Props) {
               For · {selections.occasion}
             </p>
           )}
+        </Reveal>
+
+        <Reveal delay={300}>
+          <div className="mt-16 grid grid-cols-3 gap-3 md:mt-20 md:gap-4">
+            {LOOKBOOK_IMAGES.map((img) => (
+              <figure
+                key={img.src}
+                className="group relative aspect-[4/5] overflow-hidden bg-beige"
+              >
+                <ProductImage
+                  src={img.src}
+                  alt={img.alt}
+                  gradient={img.gradient}
+                  label={img.label}
+                  className="absolute inset-0"
+                  imgClassName="transition-transform duration-[1600ms] ease-out group-hover:scale-[1.06]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-100" />
+                <figcaption className="absolute inset-x-0 bottom-0 p-3 text-[9px] font-semibold uppercase tracking-widest2 text-ivory md:p-4 md:text-[10px]">
+                  {img.label}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </Reveal>
       </div>
     </section>

@@ -12,7 +12,7 @@ export function identityWords(s: UserSelections): string[] {
     s.personalities[2],
     s.presence[2],
     s.styles[2],
-  ].filter((x): x is string => Boolean(x));
+  ].filter((x): x is NonNullable<typeof x> => Boolean(x));
   const seen = new Set<string>();
   const out: string[] = [];
   for (const c of candidates) {

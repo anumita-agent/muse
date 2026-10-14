@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PersonalitySelector from "@/components/PersonalitySelector";
 import StyleSelector from "@/components/StyleSelector";
+import EditorialStrip from "@/components/EditorialStrip";
 import PresenceSelector from "@/components/PresenceSelector";
 import OccasionSelector from "@/components/OccasionSelector";
 import DiscoverButton, { type Step } from "@/components/DiscoverButton";
@@ -130,6 +131,7 @@ export default function Home() {
           selected={selectedStyles}
           onToggle={(v) => setSelectedStyles((s) => toggle(s, v))}
         />
+        <EditorialStrip />
         <PresenceSelector
           selected={selectedPresence}
           onToggle={(v) => setSelectedPresence((s) => toggle(s, v))}

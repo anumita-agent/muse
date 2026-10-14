@@ -50,7 +50,7 @@ export default function ProductImage({
           className="grain absolute inset-0 grid place-items-center"
         >
           <span className="select-none px-6 text-center font-serif text-4xl font-light italic text-white/70 md:text-5xl">
-            {label ?? "MUSE"}
+            {label ?? "TANTORA"}
           </span>
         </div>
       )}

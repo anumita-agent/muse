@@ -17,7 +17,7 @@ export default function Hero({ onDiscover }: HeroProps) {
         src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=2000&q=80"
         alt="Editorial fashion portrait of a woman in a flowing dress"
         gradient="linear-gradient(135deg,#0e0d0c 0%,#3a0f1a 55%,#5e1a2a 100%)"
-        label="MUSE"
+        label="TANTORA"
         className="absolute inset-0 md:left-[38%]"
         imgClassName="animate-scaleIn object-[50%_20%]"
         eager

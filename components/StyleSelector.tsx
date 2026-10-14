@@ -1,7 +1,9 @@
 "use client";
 
 import { STYLE_OPTIONS } from "@/data/options";
+import { ATELIER_IMAGE } from "@/data/editorial";
 import type { Style } from "@/types";
+import ProductImage from "./ProductImage";
 import Reveal from "./Reveal";
 import SectionHeader from "./SectionHeader";
 
@@ -24,6 +26,22 @@ export default function StyleSelector({ selected, onToggle }: Props) {
                 hint="Choose as many as you like"
                 count={selected.length}
               />
+              <Reveal delay={120}>
+                <figure className="group relative mt-10 hidden aspect-[4/5] overflow-hidden bg-beige md:block">
+                  <ProductImage
+                    src={ATELIER_IMAGE.src}
+                    alt={ATELIER_IMAGE.alt}
+                    gradient={ATELIER_IMAGE.gradient}
+                    label={ATELIER_IMAGE.label}
+                    className="absolute inset-0"
+                    imgClassName="transition-transform duration-[1600ms] ease-out group-hover:scale-[1.05]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/45 via-transparent to-transparent" />
+                  <figcaption className="absolute inset-x-0 bottom-0 p-5 text-[10px] font-semibold uppercase tracking-widest2 text-ivory">
+                    {ATELIER_IMAGE.label}
+                  </figcaption>
+                </figure>
+              </Reveal>
             </div>
           </div>
 

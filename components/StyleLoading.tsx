@@ -35,7 +35,7 @@ export default function StyleLoading() {
         className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-burgundy/40 blur-[110px]"
       />
       <div className="relative">
-        <p className="font-serif text-3xl tracking-[0.5em] text-gold">MUSE</p>
+        <p className="font-serif text-3xl tracking-[0.5em] text-gold">TANTORA</p>
         <p
           key={index}
           className="mt-14 animate-fadeUp font-serif text-4xl font-light italic md:text-6xl"

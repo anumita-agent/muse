@@ -17,7 +17,7 @@ const sans = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "MUSE — Dress the way you feel.",
+  title: "TANTORA — Dress the way you feel.",
   description:
     "Discover styles that match your personality, your mood, and the presence you want to create.",
 };

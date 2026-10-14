@@ -87,8 +87,8 @@ export const PRODUCTS: Product[] = [
     details: ["Featherlight organza silk", "Hand-finished zari edge", "Includes unstitched blouse piece"],
   },
   {
-    id: "midnight-muse-lingerie",
-    name: "Midnight Muse Lingerie",
+    id: "midnight-allure-lingerie",
+    name: "Midnight Allure Lingerie",
     category: "Lingerie",
     price: 2499,
     attributes: [
